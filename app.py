@@ -3,11 +3,10 @@ import os
 
 import aws_cdk as cdk
 
-from 516_project.516_project_stack import 516ProjectStack
-
+from my_stacks.emr_stack import EMRClusterStack
 
 app = cdk.App()
-516ProjectStack(app, "516ProjectStack",
+EMRClusterStack(app, "516ProjectStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
     # but a single synthesized template can be deployed anywhere.
