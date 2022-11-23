@@ -1,0 +1,21 @@
+{
+    "SessionID": {{random.number(50)}},
+    "IP": {{internet.ip}},
+    "OrderID": {{random.number(50)}},
+    "EventDate": {{date.now}},
+    "PageNumber": {{random.number(
+        {
+            "min":1,
+            "max":6
+        }
+    )}},
+    "LocationinPage": {{random.number(
+        {
+            "min":1,
+            "max":15
+        }
+    )}},
+    "Country": "{{random.arrayElement(
+        ["US","IN","AU","BD","BE","IE","HU","GR","CH","CN"]
+    )}}"
+}
